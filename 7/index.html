@@ -1,0 +1,177 @@
+   <!DOCTYPE html> 
+  <html lang="en">
+    <head>
+      <title></title>
+
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <style type="text/css">
+        
+        *{
+          margin: 0;
+          padding: 0;
+          box-sizing:border-box;
+          color: #0A2B4C;
+        }
+        html,body{
+          font-family: 'Poppins', sans-serif;
+          height: 100%;
+          background-color:#00335C;
+
+          
+        }
+
+        .card-wraper{
+          display: flex; 
+          justify-content: center; 
+          align-items: center;  
+          height: 100%; 
+          width: 100%; 
+        }
+        .card{
+          position: relative;
+          transition: -webkit-transform 1s;
+         -webkit-transform-style: preserve-3d; 
+         height: 300px;
+         width: 525px;
+         box-shadow: 15px 15px 5px -5px;  
+         overflow: hidden;
+        }
+      .card:hover .back-card{
+            -webkit-transform: translateY(0%);
+
+        }
+        .front{
+          position: relative;
+          color: black;   
+        }
+        .front img{
+           max-width: 100%;
+         height: 100%!important;
+        }
+        .front-text {
+          position: absolute;
+          top: 90px;
+          left:30px ;
+          
+          width: 50%;
+          
+        }
+         .logo{
+          width: 50px; 
+          height: 50px; 
+        background-color:#0A2B4C;
+         -webkit-backface-visibility: hidden;
+         
+        }
+        .back-card{
+          position: relative;
+         /* background-image: url('./img/1.png');*/
+          color: #D4562D;
+         
+           top: -102%;
+          -webkit-transform: translateY(-100%);
+       -webkit-transition: all 0.6s linear;
+      -moz-transition: all 0.6s linear;
+      -o-transition: all 0.6s linear;
+      transition: all 0.6s linear;
+        }
+     .back-card img{
+           max-width: 100%;
+           height: 100%!important;
+        }
+
+        .back-text1{
+          
+           position:absolute;
+            top:40px;
+            left:40px;
+            
+        }
+
+      .bottom{
+         position: absolute;
+         left: 230px;
+         bottom: 30px;
+         
+         
+        }
+
+         .back-card1
+         {
+          width: 100%;
+          display: inline-flex;
+          margin: 5px 0px;
+         }
+
+         a{
+          text-decoration: none;
+          font-size: 13px;
+          font-weight: 800;
+           color: #D4562D;
+          
+         }
+
+          @media screen and (max-width: 450px){
+
+      .bottom{
+         position: absolute;
+         left: 120px;
+         bottom: 30px;
+        }
+          .back-card1
+         {
+          width: 100%;
+          display: inline-flex;
+          margin: 0px 0px;
+         }
+          }
+      </style>
+  </head>
+  <body>
+
+  <div class="card-wraper">
+      <div class="card">
+         <div class="front">
+          <img src="./img/2.png">
+          <div class="front-text">
+            <div class="logo"></div>
+            <h2>Company's Name</h2>
+            <p>Slogn</p>
+          </div>
+        </div>
+        <div class="back-card">
+         <img src="./img/1.png">
+           <div class="back-text1" >
+             <h2>Director Name</h2>
+             <span style="display: block;">Position</span>
+            <i class="fa fa-whatsapp  back-icon "  aria-hidden="true"></i>
+            <i class="fa fa-facebook-official " aria-hidden="true"></i>
+            <i class="fa fa-instagram " aria-hidden="true"></i>
+           </div>
+
+
+           <div class="bottom">
+          <div class="back-card1">
+          <i class="fa fa-phone fa-lg " style="margin: 10px 10px;"aria-hidden="true"></i>
+           <div > <a href=""><strong>+91 8469858517</strong></a></div>
+          </div>
+           <div class="back-card1">
+           <i class="fa fa-envelope fa-lg" style="margin: 10px 9px;" aria-hidden="true"></i>
+           <div > <a href=""><strong>company@gmail.com</strong></a></div>
+          </div>
+          <div class="back-card1">
+          <i class="fa fa-map-marker fa-2x " style="margin: 0px 10px;" aria-hidden="true"></i>
+          <a href=""><strong>S/5, Ofira Business Hub Nr. Bhagwan Mahavir College VIP Road Surat - 395007</strong></a>
+        </div>
+        
+      </div>
+  </div>
+
+
+  </body>
+  </html>

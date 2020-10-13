@@ -1,0 +1,181 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <title></title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style type="text/css">
+      
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing:border-box;
+      }
+      html,body{
+        font-family: 'Open Sans', sans-serif;
+        height: 100%;
+        background-color:#4F0037;
+        
+      }
+
+      .card-wraper{
+        display: flex; 
+        justify-content: center; 
+        align-items: center;  
+        height: 100%; 
+        width: 100%; 
+      }
+      .card{
+        position: relative;
+        transition: -webkit-transform 1s;
+       -webkit-transform-style: preserve-3d; 
+       height: 300px;
+       width: 525px;
+      box-shadow: 10px 10px 5px -5px;
+       overflow: hidden;
+       border-radius: 10px;
+      }
+      .card:hover .back-card{
+          -webkit-transform: translateY(0%);
+
+      }
+      .front{
+        position: relative;
+        color:  white;
+         
+      }
+      .front img{
+         max-width: 100%;
+       height: 100%!important;
+      }
+      .front-text {
+        position: absolute;
+        top: 100px;
+        left:100px ;
+        text-align: center;
+         
+       
+      }
+      .front-text h3{
+        margin: 5px 0px;
+      }
+       .logo{
+        height: 50px;
+        width: 50px;
+        border: 3px solid white;
+        margin: 0px auto;
+        border-radius: 10px 0px 10px 10px;
+
+      }
+     
+     
+      .back-card{
+        position: relative;
+        top: -102%;
+        -webkit-transform: translateY(-100%);
+       -webkit-transition: all 0.6s linear;
+       -moz-transition: all 0.6s linear;
+       -o-transition: all 0.6s linear;
+        transition: all 0.6s linear;
+        color:#4F0037;
+      }
+      .back-card img{
+         max-width: 100%;
+         height: 100%!important;
+      }
+
+     .left {
+      
+      width: 40%;
+      
+      position: absolute;
+      top: 100px;
+      left: 20px;
+       
+     }
+      .right {
+      width: 55%;
+      position: absolute;
+      bottom:  95px;
+      right: 10px;
+     }
+
+     .right1{
+       position: relative; margin-bottom: 15px;
+     }
+     .icon{
+      width: 10%; margin: 10px 10px;
+     }
+      
+      a{
+       color:#4F0037; width:90%; font-size: 13px; font-weight: 700; text-decoration: none;  position: absolute; top: 0px; left: 40px;
+      }
+     .text{
+      
+      
+     }
+
+  @media screen and (max-width: 450px) {
+      
+      
+      }
+
+    
+    </style>
+</head>
+<body>
+
+<div class="card-wraper">
+    <div class="card">
+       <div class="front">
+        <img src="./img/2.png">
+        <div class="front-text">
+          <div class="logo"><div class="logo1"></div></div>
+          <h1>Company Name</h1>
+          <p>slogn</p>
+        </div>
+       
+      </div>
+      <div class="back-card">
+         <img src="./img/1.png">
+        
+         <div class="left">
+            <div class="text">
+           <h2>Director's Name</h2>
+           <h5>Designation</h5>
+         </div>
+       
+         </div>
+         <div class="right">
+        <div class="right1" style="">
+          <div class="icon" style=""> <i class="fa fa-phone-square" aria-hidden="true"></i></div>
+           <a style=" " href="">+91 8469858517</a>
+         </div>
+         <div class="right1" style="">
+          <div class="icon" style=""> <i class="fa fa-globe" aria-hidden="true"></i></i></div>
+           <a style=" " href="">www.companylogo.com</a>
+         </div>
+         <div class=" right1" style="">
+          <div  class="icon" style=""> <i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+           <a style=" " href="">companyname@gmail.com</a>
+         </div> 
+          <div class="right1" style=" ">
+          <div class="icon" style=""> <i class="fa fa-location-arrow" aria-hidden="true"></i></div>
+           <a style="" href="">S/5, Ofira Business HubNr. Bhagwan Mahavir College VIP RoadSurat</a>
+         </div>
+
+         </div>
+      </div>
+       
+    </div>
+</div>
+
+
+
+</body>
+</html>

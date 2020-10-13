@@ -1,0 +1,198 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <title></title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style type="text/css">
+      
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing:border-box;
+        
+      }
+      html,body{
+        font-family:CaviarDreams ;
+        height: 100%;
+        background-color:#314756;
+        
+      
+      }
+      @font-face {
+  font-family: CaviarDreams ;
+  src: url(CaviarDreams.ttf) ;
+}
+
+      .card-wraper{
+        display: flex; 
+        justify-content: center; 
+        align-items: center;  
+        height: 100%; 
+        width: 100%; 
+      }
+      .card{
+        position: relative;
+        transition: -webkit-transform 1s;
+       -webkit-transform-style: preserve-3d; 
+       height: 300px;
+       width: 525px;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+       overflow: hidden;
+     
+      }
+      .card:hover .back-card{
+          -webkit-transform: translateY(0%);
+
+      }
+      .front{
+        position: relative;
+       color: #496B81;
+         
+      }
+      .front img{
+         max-width: 100%;
+       height: 100%!important;
+      }
+      .front-text {
+        position: absolute;
+        top: 120px;
+        left: 140px;
+        text-align: center;
+
+      }
+      .front-text h1{
+        margin: 5px 0px;
+
+      }
+       
+     
+      .back-card{
+        position: relative;
+        top: -101%;
+        -webkit-transform: translateY(-100%);
+       -webkit-transition: all 0.6s linear;
+       -moz-transition: all 0.6s linear;
+       -o-transition: all 0.6s linear;
+        transition: all 0.6s linear;
+        color:#506758;
+        text-align: left;
+      }
+      .back-card img{
+         max-width: 100%;
+         height: 100%!important;
+      }
+
+     .left {
+      text-align: right;
+      width: 40%;
+      position: absolute;
+      top: 20px; 
+      right:  20px;
+      color: #496B81;
+
+       
+     }
+      .right {
+      width: 60%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      color: white;
+     
+     }
+
+     .right1{
+       width: 100%;
+       height: 60px;
+      border:  1px solid transparent;
+        position: relative;  }
+    
+      
+      a{
+         color:white; text-decoration: none;  position: absolute; top: 0px; left: 30px; margin:15px 30px; 
+         font-size: 10pt;
+         font-weight: 600;
+      }
+      .icon{
+        margin:15px 20px; 
+      }
+     .text{
+      
+      
+     }
+    
+
+  @media screen and (max-width: 470px) {
+       .front-text h1{
+         font-size: 20px;
+     }
+     
+
+    
+    </style>
+</head>
+<body>
+
+<div class="card-wraper">
+    <div class="card">
+       <div class="front">
+        <img src="./img/2.png">
+        <div class="front-text">
+          <div class="logo"><div class="logo1"></div></div>
+          <h1>Company Name</h1>
+          <p>slogn</p>
+        </div>
+       
+      </div>
+      <div class="back-card">
+         <img src="./img/1.png">
+        
+         <div class="left">
+            <div class="text">
+           <h2>Director's Name</h2>
+           <h5>Designation</h5>
+         </div>
+       
+         </div>
+         <div class="right">
+         <div class="right1" style="">
+           <div class="icon" style=""> <i class="fa fa-phone-square" aria-hidden="true"></i></div>
+           <a style=" " href="">+91 8469858517</a>
+         </div>
+            <div class="right1" style="">
+           <div class="icon" style=""> <i class="fa fa-globe fa-lg" aria-hidden="true"></i></i></div>
+           <a style=" " href="">www.companylogo.com</a>
+         </div>
+          <div class="right1" style="">
+           <div class="icon" style=""> <i class="fa fa-location-arrow" aria-hidden="true"></i></div>
+           <a style="" href="">S/5, Ofira Business HubNr. Bhagwan Mahavir College VIP RoadSurat</a>
+         </div>
+          <div class="right1" style="">
+          <div  class="icon" style=""> <i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+           <a style=" " href="">companyname@gmail.com</a>
+         </div>
+          <div class="right1" style="">
+           <div class="icon" style=""> <i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></div>
+           <a style=" " href="">facebook.com</a>
+         </div>
+         </div>
+      </div>
+       
+    </div>
+</div>
+
+
+
+</body>
+</html>
+
+<!-- <div class="right1" style="">
+          <div class="icon" style=""> <i class="fa fa-phone-square" aria-hidden="true"></i></div>
+           <a style=" " href="">+91 8469858517</a>
+         </div -->>
